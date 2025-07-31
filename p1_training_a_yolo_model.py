@@ -14,7 +14,7 @@ output_csv_path = os.path.join(ubuntu_path, "cow_training_summary.csv")
 model = YOLO("yolov8s.pt")
 model.train(
     data=data_yaml,
-    epochs=50,
+    epochs=200,
     imgsz=640,
     batch=16,
     name=run_name,
